@@ -1,0 +1,16 @@
+﻿<Page x:Class="POD11.Documentation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:POD11"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Documentation" Width="800" Height="600" Background="#FF323232">
+
+    <Grid>
+        <Label x:Name="label" Content="Dokumentacja" HorizontalAlignment="Left" Margin="264,55,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Kryptografia wizualna - w obazie wejściowycm w zależności od napotkanego pixela w dwóch udziałach są&#xD;&#xA;ustawiane dwa pixele. Gdy pixel jest biały to w obu udziałach zestaw pixeli jest taki sam tj. biały i czarny lub&#xD;&#xA;czarny i biały. Kiedy pixel jest czarny to dla drugiego udziału jest zestaw odwrotny. Odszyfrowanie polega na&#xD;&#xA;założeniu na siebie dwóch udziałów. Gdy w obu udziałach na tej samej pozycji jest biały pixel to na obrazie&#xD;&#xA;wyjściowym ustawiany jest biały pixel, w pozostałachy przypadkach ustawiany jest pixel koloru czarnego.&#xD;&#xA;&#xD;&#xA;Dane wejściowe: obrazek w kolorach czarnym i białym&#xA;Dane wyjściowe: obrazek w kolorach czarnym i białym szerszy dwukrotnie od obrazka wejściowego&#xA;Format danych: obrazki powinny być z rozszerzeniem *.bmp&#xA;Rozmiar danych: brak ograniczeń&#xA;Ograniczenia: brak&#xD;&#xA;&#xD;&#xA;Środowisko programistyczne: Visual Studio 2017&#xD;&#xA;&#xD;&#xA;Autor: Agnieszka Gregulec" HorizontalAlignment="Left" Margin="10,174,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" Width="780" Height="416"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,33 @@
+﻿<Page x:Class="POD11.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:POD11"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="MainPage" Width="800" Height="600">
+
+    <Grid Height="600" VerticalAlignment="Top" HorizontalAlignment="Left" Width="800" Background="#FF323232">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="input" HorizontalAlignment="Left" Height="150" Margin="33,31,0,0" VerticalAlignment="Top" Width="150"/>
+        <Image x:Name="output" HorizontalAlignment="Left" Height="150" Margin="33,426,0,0" VerticalAlignment="Top" Width="300">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="part1" HorizontalAlignment="Left" Height="150" Margin="33,212,0,0" VerticalAlignment="Top" Width="300"/>
+        <Image x:Name="part2" HorizontalAlignment="Left" Height="150" Margin="361,212,0,0" VerticalAlignment="Top" Width="300"/>
+        <Button x:Name="open" Content="wyczytaj obraz" HorizontalAlignment="Left" Margin="444,445,0,0" VerticalAlignment="Top" Width="115" Height="48" Click="open_Click"/>
+        <Button x:Name="dokumentation" Content="dokumentacja" HorizontalAlignment="Left" Margin="632,445,0,0" VerticalAlignment="Top" Width="112" Height="48" Click="dokumentation_Click"/>
+        <Label x:Name="label" Content="Input" HorizontalAlignment="Left" Margin="201,94,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label1" Content="Output" HorizontalAlignment="Left" Margin="351,513,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label2" Content="Udział 1 i Udział 2" HorizontalAlignment="Left" Margin="294,377,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="encrypt" Content="Szyfruj" HorizontalAlignment="Left" Margin="444,537,0,0" VerticalAlignment="Top" Width="115" Height="35" Click="encrypt_Click"/>
+        <Button x:Name="decrypt" Content="Rozszyfruj" HorizontalAlignment="Left" Margin="632,537,0,0" VerticalAlignment="Top" Width="112" Height="35" Click="decrypt_Click"/>
+
+    </Grid>
+</Page>
